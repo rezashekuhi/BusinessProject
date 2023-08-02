@@ -10,9 +10,4 @@
       <ProjectReference Include="..\Templete.Entities\Templete.Entities.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Products\Dto\" />
-      <Folder Include="Products\Exceptions\" />
-    </ItemGroup>
-
 </Project>

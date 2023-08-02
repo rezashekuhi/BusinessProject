@@ -56,6 +56,11 @@ namespace ShopApp.Persistanse.EF.Groups
             }).FirstOrDefault();
         }
 
+        public bool IsExistById(int id)
+        {
+            return _group.Any(_ => _.Id == id);
+        }
+
         public bool IsExsistByName(string name)
         {
            return _group.Any(_=>_.Name==name);

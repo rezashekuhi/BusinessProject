@@ -16,9 +16,20 @@ namespace Templete.Persistanse.EF.Products
         {
             _products=context.Set<Product>();
         }
+
+        public void Add(Product product)
+        {
+            _products.Add(product);
+        }
+
         public bool IsExsistByGroupId(int groupId)
         {
             return _products.Any(_ => _.GroupId == groupId);
+        }
+
+        public bool IsExsistByTitle(string title)
+        {
+            return _products.Any(_ => _.Title == title);
         }
     }
 }

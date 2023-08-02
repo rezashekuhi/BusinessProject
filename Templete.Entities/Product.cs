@@ -16,7 +16,7 @@ namespace ShopApp.Entities
         public Condition Condition { get; set; }
 
         public List<ProductArrival> ProductArrivals { get; set; }
-            public List<SalesInvoice> SalesInvoices { get; set; }
+        public List<SalesInvoice> SalesInvoices { get; set; }
         public Group Group { get; set; }
     }
     public enum Condition

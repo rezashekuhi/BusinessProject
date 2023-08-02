@@ -16,5 +16,6 @@ namespace ShopApp.Services.Groups.Contract
         void Delete(Group group);
         List<GetAllGroupDto> GetAll();
         GetGroupAndProductsByIdDto GetById(int id);
+        bool IsExistById(int id);
     }
 }
