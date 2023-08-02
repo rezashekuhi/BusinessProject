@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">ERROR</s:String>
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/FiltersState/=CodeStyle/@EntryIndexedValue">Off</s:String>
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/FiltersState/=NamingFilter/@EntryIndexedValue">Off</s:String>
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/FiltersState/=SpellingFilter/@EntryIndexedValue">Off</s:String>
+	<s:Boolean x:Key="/Default/Environment/InlayHints/GeneralInlayHintsOptions/EnableInlayHints/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed379bb4_002D7ced_002D48fe_002D8133_002D6fa3498921ab/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Add_Certain_add_a_complex" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5DFD1C27-D02D-4388-89F0-148F9CC99486::net6.0::Tempelte.Specs.Tests.Complexes.Add.AddComplex.Run&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::82D41774-C1D6-465F-AC6D-75F84601D68A::net6.0::CMS.Service.Unit.Test.Complexes.ComplexServiceTests.Add_add_a_complex_properly&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5DFD1C27-D02D-4388-89F0-148F9CC99486::net6.0::Tempelte.Specs.Tests.Complexes.Add.AddComplex&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5DFD1C27-D02D-4388-89F0-148F9CC99486::net6.0::Tempelte.Specs.Tests.Complexes.Update.UpdateComplexUnitCount.Run&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::82D41774-C1D6-465F-AC6D-75F84601D68A::net6.0::CMS.Service.Unit.Test.Complexes.ComplexServiceTests.UpdateUnitCount_update_a_&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::82D41774-C1D6-465F-AC6D-75F84601D68A::net6.0::CMS.Service.Unit.Test.Complexes.ComplexServiceTests.UpdateUnitCount_throw_exception_complex_not_found&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
