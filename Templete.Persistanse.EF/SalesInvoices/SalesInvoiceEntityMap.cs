@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ShopApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 
-namespace ShopApp.Persistanse.EF.SalesInvoices
+namespace Templete.Persistanse.EF.SalesInvoices
 {
     public class SalesInvoiceEntityMap : IEntityTypeConfiguration<SalesInvoice>
     {
@@ -18,7 +18,7 @@ namespace ShopApp.Persistanse.EF.SalesInvoices
             builder.Property(_ => _.Id).ValueGeneratedOnAdd();
             builder.Property(_ => _.CustomerName).IsRequired();
             builder.Property(_ => _.InvoiceNumber).IsRequired();
-            builder.Property(_=>_.DateTime).IsRequired();
+            builder.Property(_ => _.DateTime).IsRequired();
             builder.Property(_ => _.Price).IsRequired();
             builder.Property(_ => _.Number).IsRequired();
             builder.HasOne(_ => _.Product)

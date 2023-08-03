@@ -1,10 +1,10 @@
 ﻿using FluentAssertions;
-using ShopApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 using Templete.Services.Groups.Exceptions;
 using Templete.Services.Products.Exceptions;
 using Templete.TestTools.DataBaseConfig;

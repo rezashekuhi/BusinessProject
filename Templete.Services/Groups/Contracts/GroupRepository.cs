@@ -1,12 +1,12 @@
-﻿using ShopApp.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 using Templete.Services.Groups.Dto;
 
-namespace ShopApp.Services.Groups.Contract
+namespace Templete.Services.Groups.Contracts
 {
     public interface GroupRepository
     {

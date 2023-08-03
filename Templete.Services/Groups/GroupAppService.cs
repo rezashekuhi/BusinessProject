@@ -1,17 +1,16 @@
-﻿using ShopApp.Entities;
-using ShopApp.Services.Groups.Contract;
-using ShopApp.Services.Groups.Dto;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 using Templete.Services.Contracts;
+using Templete.Services.Groups.Contracts;
 using Templete.Services.Groups.Dto;
 using Templete.Services.Groups.Exceptions;
 using Templete.Services.Products.Contracts;
 
-namespace ShopApp.Services.Groups
+namespace Templete.Services.Groups
 {
     public class GroupAppService : GroupService
     {
@@ -19,7 +18,7 @@ namespace ShopApp.Services.Groups
         private readonly UnitOfWork _unitOfWork;
         private readonly ProductRepository _productRepository;
         public GroupAppService(GroupRepository groupRepository
-            ,UnitOfWork unitOfWork,
+            , UnitOfWork unitOfWork,
             ProductRepository productRepository)
         {
             _groupRepository = groupRepository;
@@ -28,7 +27,7 @@ namespace ShopApp.Services.Groups
         }
         public void Add(AddGroupDto dto)
         {
-            var isExsistByName=_groupRepository.IsExsistByName(dto.Name);
+            var isExsistByName = _groupRepository.IsExsistByName(dto.Name);
             if (isExsistByName == true)
             {
                 throw new DuplicateGroupNameException();
@@ -46,12 +45,12 @@ namespace ShopApp.Services.Groups
         {
             var group = _groupRepository.FindeById(id);
             var groupHasAProduct = _productRepository.IsExsistByGroupId(id);
-            if (groupHasAProduct==true)
+            if (groupHasAProduct == true)
             {
                 throw new GroupHasAProductException();
             }
-            
-            if (group==null)
+
+            if (group == null)
             {
                 throw new GroupIdNotFoundException();
             }

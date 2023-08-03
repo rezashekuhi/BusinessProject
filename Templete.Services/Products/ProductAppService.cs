@@ -1,11 +1,11 @@
-﻿using ShopApp.Entities;
-using ShopApp.Services.Groups.Contract;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 using Templete.Services.Contracts;
+using Templete.Services.Groups.Contracts;
 using Templete.Services.Groups.Exceptions;
 using Templete.Services.Products.Contracts;
 using Templete.Services.Products.Dto;

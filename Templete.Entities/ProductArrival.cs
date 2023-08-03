@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopApp.Entities
+namespace Templete.Entities
 {
     public class ProductArrival
     {
@@ -15,7 +15,7 @@ namespace ShopApp.Entities
         public string InvoiceNumber { get; set; }
         public string CompanyName { get; set; }
 
-        
+
         public Product Product { get; set; }
     }
 }

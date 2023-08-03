@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ShopApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 
-namespace ShopApp.Persistanse.EF.Groups
+namespace Templete.Persistanse.EF.Groups
 {
     public class GroupEntityMap : IEntityTypeConfiguration<Group>
     {

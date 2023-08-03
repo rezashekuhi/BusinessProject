@@ -1,11 +1,15 @@
 using Templete.Persistanse.EF;
 using Microsoft.EntityFrameworkCore;
 using Templete.Services.Contracts;
-using ShopApp.Services.Groups.Contract;
-using ShopApp.Services.Groups;
-using ShopApp.Persistanse.EF.Groups;
 using Templete.Services.Products.Contracts;
 using Templete.Persistanse.EF.Products;
+using Templete.Persistanse.EF.Groups;
+using Templete.Services.Groups.Contracts;
+using Templete.Services.Groups;
+using Templete.Services.Products;
+using Templete.Services.ProductArrivals.Contracts;
+using Templete.Services.ProductArrivals;
+using Templete.Persistanse.EF.ProductArrivals;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,10 +19,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<GroupService, GroupAppService>();
 builder.Services.AddScoped<GroupRepository, EFGroupRepository>();
-builder.Services.AddScoped<ProductRepository,EFProductRepository>();
-builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
+builder.Services.AddScoped<ProductService, ProductAppService>();
+builder.Services.AddScoped<ProductRepository, EFProductRepository>();
+builder.Services.AddScoped<ProductArrivalService, ProductArrivalAppService>();
+builder.Services.AddScoped<ProductArrivalRepository, EFProductArrivalRepository>();
+
 builder.Services.AddDbContext<EFDataContext>(_ =>
     _.UseSqlServer("Server=.;Database=ShopDb;Trusted_Connection=True;"));
 builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();

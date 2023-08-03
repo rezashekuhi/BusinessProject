@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShopApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 using Templete.Services.Products.Contracts;
 
 namespace Templete.Persistanse.EF.Products
@@ -22,6 +22,11 @@ namespace Templete.Persistanse.EF.Products
             _products.Add(product);
         }
 
+        public Product FindeById(int id)
+        {
+            return _products.FirstOrDefault(_=>_.Id == id);
+        }
+
         public bool IsExsistByGroupId(int groupId)
         {
             return _products.Any(_ => _.GroupId == groupId);
@@ -30,6 +35,11 @@ namespace Templete.Persistanse.EF.Products
         public bool IsExsistByTitle(string title)
         {
             return _products.Any(_ => _.Title == title);
+        }
+
+        public void Update(Product product)
+        {
+            _products.Update(product);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Templete.TestTools.DataBaseConfig.Integration;
 using Xunit;
 
-namespace Tempelte.Specs.Tests.Groups
+namespace Tempelte.Specs.Tests
 {
     public class SpecModel : BusinessIntegrationTest
     {

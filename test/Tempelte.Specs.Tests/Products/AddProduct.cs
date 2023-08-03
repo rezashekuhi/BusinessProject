@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using ShopApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Entities;
 using Templete.TestTools.DataBaseConfig;
 using Templete.TestTools.DataBaseConfig.Integration;
 using Templete.TestTools.Groups;
@@ -47,7 +47,7 @@ namespace Tempelte.Specs.Tests.Products
             " موجودی ۰  باید در فهرست کالا موجود باشد")]
         public void Then()
         {
-            var expected = ReadContext.Set<Product>().ToHashSet().Last();
+            var expected = ReadContext.Set<Product>().Single(_=>_.GroupId==group1.Id);
             expected.Title.Should().Be("شیر");
             expected.MinimumInventory.Should().Be(10);
             expected.Condition.Should().Be(Condition.Unavailable);

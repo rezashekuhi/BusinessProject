@@ -1,10 +1,10 @@
-﻿using ShopApp.Entities;
-using ShopApp.Services.Groups.Dto;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Services.Groups.Dto;
 
 namespace Templete.TestTools.Groups
 {

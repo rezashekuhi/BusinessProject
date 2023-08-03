@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShopApp.Services.Groups.Contract;
-using ShopApp.Services.Groups.Dto;
+using Templete.Services.Groups.Contracts;
 using Templete.Services.Groups.Dto;
 
 namespace Templete.RestApi.Properties.Controllers

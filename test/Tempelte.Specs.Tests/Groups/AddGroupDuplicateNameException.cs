@@ -1,13 +1,10 @@
 ﻿using FluentAssertions;
-using ShopApp.Entities;
-using ShopApp.Services.Groups;
-using ShopApp.Services.Groups.Dto;
-using ShopApp.TestTools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Templete.Services.Groups;
 using Templete.Services.Groups.Exceptions;
 using Templete.TestTools.DataBaseConfig;
 using Templete.TestTools.DataBaseConfig.Integration;

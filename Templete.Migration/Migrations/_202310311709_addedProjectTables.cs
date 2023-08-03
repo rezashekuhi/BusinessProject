@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopApp.Migration.Migrations
+namespace Templete.Migration.Migrations
 {
     [FluentMigrator.Migration(202310311709)]
     public class _202310311709_addedProjectTables : FluentMigrator.Migration
@@ -21,7 +21,7 @@ namespace ShopApp.Migration.Migrations
                 .WithColumn("MinimumInventory").AsInt32().NotNullable()
                 .WithColumn("Condition").AsInt32().NotNullable()
                 .WithColumn("GroupId").AsInt32().NotNullable()
-                .ForeignKey("FK_Products_Groups","Groups" ,"Id");
+                .ForeignKey("FK_Products_Groups", "Groups", "Id");
             Create.Table("ProductArrivals")
                 .WithColumn("Id").AsInt32().PrimaryKey().Identity()
                 .WithColumn("DateTime").AsDateTime().NotNullable()
@@ -40,13 +40,13 @@ namespace ShopApp.Migration.Migrations
                 .WithColumn("ProductId").AsInt32().NotNullable()
                 .ForeignKey("FK_SalesInvoices_Products", "Products", "Id");
             Create.Table("AccountingDocuments")
-                .WithColumn("documentNumber").AsInt32().PrimaryKey().Identity()                
+                .WithColumn("documentNumber").AsInt32().PrimaryKey().Identity()
                 .WithColumn("InvoiceNumber").AsString().NotNullable()
                 .WithColumn("TotalAmount").AsInt32().NotNullable()
                 .WithColumn("SalesInvoiceId").AsInt32().NotNullable()
                 .ForeignKey("FK_AccountingDocuments_SalesInvoices", "SalesInvoices", "Id");
         }
-        
+
         public override void Down()
         {
             Delete.Table("AccountingDocuments");
