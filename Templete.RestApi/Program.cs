@@ -15,6 +15,7 @@ using Templete.Services.SalesInvoices;
 using Templete.Persistanse.EF.SalesInvoices;
 using Templete.Persistanse.EF.AccountingDocuments;
 using Templete.Services.AccountingDocuments.Contract;
+using Templete.Services.AccountingDocuments;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,8 +36,7 @@ builder.Services.AddScoped<ProductArrivalRepository, EFProductArrivalRepository>
 builder.Services.AddScoped<SalesInvoiceService, SalesInvoiceAppService>();
 builder.Services.AddScoped<SalesInvoiceRepository, EFSalesInvoiceRepository>();
 builder.Services.AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
-
-
+builder.Services.AddScoped<AccountingDocumentService, AccountingDocumentAppService>();
 
 builder.Services.AddDbContext<EFDataContext>(_ =>
     _.UseSqlServer("Server=.;Database=ShopDb;Trusted_Connection=True;"));
