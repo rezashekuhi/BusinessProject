@@ -8,6 +8,7 @@ using Templete.Services.Contracts;
 using Templete.Services.Groups.Contracts;
 using Templete.Services.Groups.Exceptions;
 using Templete.Services.Products.Contracts;
+using Templete.Services.Products.Contracts.Dto;
 using Templete.Services.Products.Dto;
 using Templete.Services.Products.Exceptions;
 
@@ -50,6 +51,11 @@ namespace Templete.Services.Products
             };
             _productRepository.Add(product);
             _unitOfWork.Complete();
+        }
+
+        public List<GetAllProductDto> GetAll(SearchInGetAllDto dto)
+        {
+            return _productRepository.GetAll(dto);
         }
     }
 }

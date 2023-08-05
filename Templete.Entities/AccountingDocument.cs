@@ -12,6 +12,7 @@ namespace Templete.Entities
         public int SalesInvoiceId { get; set; }
         public string InvoiceNumber { get; set; }
         public int TotalAmount { get; set; }
+        public DateTime DateTime { get; set; }
 
         public SalesInvoice SalesInvoice { get; set; }
     }

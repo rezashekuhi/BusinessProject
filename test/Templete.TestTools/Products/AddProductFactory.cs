@@ -18,8 +18,8 @@ namespace Templete.TestTools.Products
                 GroupId = groupId,
                 Title = title,
                 Condition = condition,
-                Inventory = 0,
-                MinimumInventory = 10
+                Inventory = inventory,
+                MinimumInventory = minimumInventory
             };
         }
     }

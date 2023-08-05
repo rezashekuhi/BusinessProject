@@ -10,6 +10,11 @@ using Templete.Services.Products;
 using Templete.Services.ProductArrivals.Contracts;
 using Templete.Services.ProductArrivals;
 using Templete.Persistanse.EF.ProductArrivals;
+using Templete.Services.SalesInvoices.Contracts;
+using Templete.Services.SalesInvoices;
+using Templete.Persistanse.EF.SalesInvoices;
+using Templete.Persistanse.EF.AccountingDocuments;
+using Templete.Services.AccountingDocuments.Contract;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +32,11 @@ builder.Services.AddScoped<ProductService, ProductAppService>();
 builder.Services.AddScoped<ProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ProductArrivalService, ProductArrivalAppService>();
 builder.Services.AddScoped<ProductArrivalRepository, EFProductArrivalRepository>();
+builder.Services.AddScoped<SalesInvoiceService, SalesInvoiceAppService>();
+builder.Services.AddScoped<SalesInvoiceRepository, EFSalesInvoiceRepository>();
+builder.Services.AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
+
+
 
 builder.Services.AddDbContext<EFDataContext>(_ =>
     _.UseSqlServer("Server=.;Database=ShopDb;Trusted_Connection=True;"));

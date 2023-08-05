@@ -8,6 +8,10 @@ namespace Templete.Entities
 {
     public class SalesInvoice
     {
+        public SalesInvoice()
+        {
+            AccountingDocuments = new HashSet<AccountingDocument>();
+        }
         public int Id { get; set; }
         public int ProductId { get; set; }
         public string CustomerName { get; set; }
@@ -16,7 +20,7 @@ namespace Templete.Entities
         public DateTime DateTime { get; set; }
         public string InvoiceNumber { get; set; }
 
-        public List<AccountingDocument> AccountingDocuments { get; set; }
+        public HashSet<AccountingDocument> AccountingDocuments { get; set; }
         public Product Product { get; set; }
     }
 }

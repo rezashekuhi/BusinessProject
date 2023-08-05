@@ -43,6 +43,7 @@ namespace Templete.Migration.Migrations
                 .WithColumn("documentNumber").AsInt32().PrimaryKey().Identity()
                 .WithColumn("InvoiceNumber").AsString().NotNullable()
                 .WithColumn("TotalAmount").AsInt32().NotNullable()
+                .WithColumn("DateTime").AsDateTime().NotNullable()
                 .WithColumn("SalesInvoiceId").AsInt32().NotNullable()
                 .ForeignKey("FK_AccountingDocuments_SalesInvoices", "SalesInvoices", "Id");
         }

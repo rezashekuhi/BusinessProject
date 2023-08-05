@@ -8,6 +8,11 @@ namespace Templete.Entities
 {
     public class Product
     {
+        public Product()
+        {
+            ProductArrivals = new HashSet<ProductArrival>();
+            SalesInvoices= new HashSet<SalesInvoice>();
+        }
         public int Id { get; set; }
         public int GroupId { get; set; }
         public string Title { get; set; }
@@ -15,8 +20,8 @@ namespace Templete.Entities
         public int MinimumInventory { get; set; }
         public Condition Condition { get; set; }
 
-        public List<ProductArrival> ProductArrivals { get; set; }
-        public List<SalesInvoice> SalesInvoices { get; set; }
+        public HashSet<ProductArrival> ProductArrivals { get; set; }
+        public HashSet<SalesInvoice> SalesInvoices { get; set; }
         public Group Group { get; set; }
     }
     public enum Condition

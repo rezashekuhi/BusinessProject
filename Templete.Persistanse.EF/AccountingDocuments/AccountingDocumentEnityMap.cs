@@ -18,6 +18,7 @@ namespace Templete.Persistanse.EF.AccountingDocuments
             builder.Property(_ => _.documentNumber).ValueGeneratedOnAdd();
             builder.Property(_ => _.SalesInvoiceId).IsRequired();
             builder.Property(_ => _.TotalAmount).IsRequired();
+            builder.Property(_ => _.DateTime).IsRequired();
             builder.HasOne(_ => _.SalesInvoice)
                 .WithMany(_ => _.AccountingDocuments)
                 .HasForeignKey(_ => _.SalesInvoiceId);
