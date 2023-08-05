@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Templete.Entities;
 using Templete.Services.Contracts;
 using Templete.Services.Groups.Contracts;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Groups.Dto;
 using Templete.Services.Groups.Exceptions;
 using Templete.Services.Products.Contracts;
@@ -55,6 +56,24 @@ namespace Templete.Services.Groups
                 throw new GroupIdNotFoundException();
             }
             _groupRepository.Delete(group);
+            _unitOfWork.Complete();
+        }
+
+        public void Edite(EditeGroupDto dto)
+        {
+            var group = _groupRepository.FindeById(dto.GroupId);
+            if (group==null)
+            {
+                throw new GroupIdNotFoundException();
+            }
+            var isExsistByName = _groupRepository.IsExsistByName(dto.Name);
+            if (isExsistByName==true)
+            {
+                throw new DuplicateGroupNameException();
+            }
+
+            group.Name = dto.Name;
+            _groupRepository.Update(group);
             _unitOfWork.Complete();
         }
 

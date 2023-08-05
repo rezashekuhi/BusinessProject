@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Templete.Services.Groups.Contracts;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Groups.Dto;
 
 namespace Templete.RestApi.Properties.Controllers
@@ -37,6 +38,11 @@ namespace Templete.RestApi.Properties.Controllers
         {
             return _Service.GetById(id);
         }
-      
+
+        [HttpPatch]
+        public void Edite([FromBody] EditeGroupDto dto)
+        {
+            _Service.Edite(dto);
+        }
     }
 }

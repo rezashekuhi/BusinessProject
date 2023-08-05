@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Templete.Entities;
 using Templete.Persistanse.EF;
 using Templete.Services.Groups.Contracts;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Groups.Dto;
 
 namespace Templete.Persistanse.EF.Groups
@@ -65,6 +66,11 @@ namespace Templete.Persistanse.EF.Groups
         public bool IsExsistByName(string name)
         {
             return _group.Any(_ => _.Name == name);
+        }
+
+        public void Update(Group group)
+        {
+            _group.Update(group);
         }
     }
 }

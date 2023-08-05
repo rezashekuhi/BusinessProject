@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Templete.Entities;
 using Templete.Services.Contracts;
 using Templete.Services.Groups.Contracts;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Groups.Exceptions;
+using Templete.Services.ProductArrivals.Exceptions;
 using Templete.Services.Products.Contracts;
 using Templete.Services.Products.Contracts.Dto;
 using Templete.Services.Products.Dto;
@@ -51,6 +53,19 @@ namespace Templete.Services.Products
             };
             _productRepository.Add(product);
             _unitOfWork.Complete();
+        }
+
+        public void Delete(int id)
+        {
+            var product = _productRepository.FindeById(id);
+            if (product==null)
+            {
+                throw new ProductIdNotFoundException();
+            }
+
+            _productRepository.Delete(product);
+            _unitOfWork.Complete();
+
         }
 
         public List<GetAllProductDto> GetAll(SearchInGetAllDto dto)

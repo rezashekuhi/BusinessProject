@@ -56,7 +56,7 @@ namespace CMS.Service.Unit.Test.SalesInvoices
             var invalidProductId = 1;
 
             var sut = SalesInvoiceServiceFactory.Generate(SetupContext);
-            var dto = AddSalesInvoiceDtoFactory.Create(invalidProductId, 1000);
+            var dto = AddSalesInvoiceDtoFactory.Create(invalidProductId);
             var expected = ()=> sut.Add(dto);
 
             expected.Should().ThrowExactly<ProductIdNotFoundException>();

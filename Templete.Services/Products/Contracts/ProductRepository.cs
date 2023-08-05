@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Templete.Entities;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Products.Contracts.Dto;
 
 namespace Templete.Services.Products.Contracts
@@ -14,6 +15,7 @@ namespace Templete.Services.Products.Contracts
         bool IsExsistByTitle(string title);
         void Add(Product product);
         Product FindeById(int id);
+        void Delete(Product product);
         void Update(Product product);
         List<GetAllProductDto> GetAll(SearchInGetAllDto dto);
     }

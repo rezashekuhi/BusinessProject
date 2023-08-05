@@ -27,5 +27,11 @@ namespace Templete.RestApi.Properties.Controllers
             return _service.GetAll(dto);
         }
 
+        [HttpDelete]
+        public void Delete(int id)
+        {
+            _service.Delete(id);
+        }
+
     }
 }

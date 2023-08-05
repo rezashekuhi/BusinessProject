@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Templete.Entities;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Groups.Dto;
 
 namespace Templete.Services.Groups.Contracts
@@ -17,5 +18,6 @@ namespace Templete.Services.Groups.Contracts
         List<GetAllGroupDto> GetAll();
         GetGroupAndProductsByIdDto GetById(int id);
         bool IsExistById(int id);
+        void Update(Group group);
     }
 }

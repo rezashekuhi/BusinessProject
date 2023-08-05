@@ -95,7 +95,7 @@ namespace CMS.Service.Unit.Test.ProductArrivals
             var invalidProductId = 1;
 
             var sut = ProductArrivalServiceFactory.Generate(SetupContext);
-            var dto = ProductArrivalDtoFactory.Create(invalidProductId, 5, "123a", "dummy_compani_name");
+            var dto = ProductArrivalDtoFactory.Create(invalidProductId);
             var expected = ()=> sut.Add(dto);
             expected.Should().ThrowExactly<ProductIdNotFoundException>();
         }

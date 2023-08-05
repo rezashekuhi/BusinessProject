@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Templete.Entities;
 using Templete.Services.Groups;
+using Templete.Services.Groups.Contracts.Dto;
 using Templete.Services.Groups.Dto;
 using Templete.Services.Groups.Exceptions;
 using Templete.TestTools.DataBaseConfig;
@@ -134,6 +135,60 @@ namespace CMS.Service.Unit.Test.Groups
             var resultProduct = result.Products.Single();
             resultProduct.Id.Should().Be(product.Id);
             resultProduct.Title.Should().Be(product.Title);
+        }
+
+        [Fact]
+        public void Edite_edite_group_properly()
+        {
+             var group = AddGroupFactory.Create();
+            DbContext.Save(group);
+
+            var dto = new EditeGroupDto
+            {
+                GroupId = group.Id,
+                Name = "قطعات خودرو"
+            };
+            var sut = GroupServiceFactory.Generate(SetupContext);
+            sut.Edite(dto);
+
+            var expected = ReadContext.Set<Group>().Single();
+            expected.Name.Should().Be(dto.Name);
+        }
+
+        [Fact]
+        public void Edite_throw_exception_when_group_duplicate_name()
+        {
+            var group1 = AddGroupFactory.Create("لوازم یدکی");
+            DbContext.Save(group1);
+            var group2 = AddGroupFactory.Create("بهداشتی");
+            DbContext.Save(group2);
+
+            var dto = new EditeGroupDto
+            {
+                GroupId = group1.Id,
+                Name = "بهداشتی"
+            };
+            var sut = GroupServiceFactory.Generate(SetupContext);
+            var expected = () => sut.Edite(dto);
+
+            expected.Should().ThrowExactly<DuplicateGroupNameException>();
+
+        }
+
+        [Fact]
+        public void Edite_throw_exception_when_group_id_not_found()
+        {
+            var invalidId = 1;
+
+            var dto = new EditeGroupDto
+            {
+                GroupId = invalidId,
+                Name = "بهداشتی"
+            };
+            var sut = GroupServiceFactory.Generate(SetupContext);
+            var expected = () => sut.Edite(dto);
+
+            expected.Should().ThrowExactly<GroupIdNotFoundException>();
         }
 
     }

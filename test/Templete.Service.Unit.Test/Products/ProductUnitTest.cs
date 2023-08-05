@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Templete.Entities;
 using Templete.Services.Groups.Exceptions;
+using Templete.Services.ProductArrivals.Exceptions;
 using Templete.Services.Products.Exceptions;
 using Templete.TestTools.DataBaseConfig;
 using Templete.TestTools.DataBaseConfig.Unit;
@@ -63,6 +64,32 @@ namespace CMS.Service.Unit.Test.Products
             var expected = () => sut.Add(dto);
 
             expected.Should().ThrowExactly<ProductIsDuplicateException>();
+        }
+
+        [Fact]
+        public void Delete_delete_product_properly()
+        {
+            var group = AddGroupFactory.Create();
+            DbContext.Save(group);
+            var product = AddProductFactory.Create(group.Id);
+            DbContext.Save(product);
+
+            var sut = ProductServiceFactory.Generate(SetupContext);
+            sut.Delete(product.Id);
+
+            var expected = ReadContext.Set<Product>();
+            expected.Should().HaveCount(0);
+        }
+
+        [Fact]
+        public void Delete_throw_exception_when_product_id_not_found()
+        {
+            var invalidId = 1;
+
+            var sut = ProductServiceFactory.Generate(SetupContext);
+            var expected=()=> sut.Delete(invalidId);
+
+            expected.Should().ThrowExactly<ProductIdNotFoundException>();
         }
     }
 }
