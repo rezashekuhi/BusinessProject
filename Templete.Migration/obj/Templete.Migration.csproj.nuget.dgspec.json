@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\reza\\Desktop\\template\\Templete.Migration\\Templete.Migration.csproj": {}
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Migration\\Templete.Migration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\reza\\Desktop\\template\\Templete.Migration\\Templete.Migration.csproj": {
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Migration\\Templete.Migration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\Desktop\\template\\Templete.Migration\\Templete.Migration.csproj",
+        "projectUniqueName": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Migration\\Templete.Migration.csproj",
         "projectName": "Templete.Migration",
-        "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Migration\\Templete.Migration.csproj",
-        "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Migration\\obj\\",
+        "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Migration\\Templete.Migration.csproj",
+        "packagesPath": "C:\\Users\\taav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Migration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

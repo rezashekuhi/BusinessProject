@@ -5,7 +5,7 @@ using Templete.Services.ProductArrivals.Dto;
 
 namespace Templete.RestApi.Controllers
 {
-    [Route("product_arrvials")]
+    [Route("product-arrvials")]
     [ApiController]
     public class ProductArrvialController : Controller
     {

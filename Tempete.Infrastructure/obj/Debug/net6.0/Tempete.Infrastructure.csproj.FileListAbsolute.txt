@@ -34,3 +34,15 @@ C:\Users\reza\Desktop\template\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.I
 C:\Users\reza\Desktop\template\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.dll
 C:\Users\reza\Desktop\template\Tempete.Infrastructure\obj\Debug\net6.0\ref\Tempete.Infrastructure.dll
 C:\Users\reza\Desktop\template\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.pdb
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\bin\Debug\net6.0\Tempete.Infrastructure.deps.json
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\bin\Debug\net6.0\Tempete.Infrastructure.dll
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\bin\Debug\net6.0\ref\Tempete.Infrastructure.dll
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\bin\Debug\net6.0\Tempete.Infrastructure.pdb
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.AssemblyInfo.cs
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.dll
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\ref\Tempete.Infrastructure.dll
+C:\Users\taav\Desktop\BusinessProject\Tempete.Infrastructure\obj\Debug\net6.0\Tempete.Infrastructure.pdb

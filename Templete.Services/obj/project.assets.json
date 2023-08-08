@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\reza\\.nuget\\packages\\": {}
+    "C:\\Users\\taav\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj",
+      "projectUniqueName": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj",
       "projectName": "Templete.Services",
-      "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj",
-      "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\obj\\",
+      "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj",
+      "packagesPath": "C:\\Users\\taav\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\taav\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj": {
-              "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj"
+            "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj": {
+              "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj"
             }
           }
         }

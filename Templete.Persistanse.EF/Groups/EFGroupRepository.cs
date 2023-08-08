@@ -68,6 +68,11 @@ namespace Templete.Persistanse.EF.Groups
             return _group.Any(_ => _.Name == name);
         }
 
+        public bool IsExsistByNameAndId(string name,int id)
+        {
+            return _group.Any(_ => _.Name == name&&_.Id!=id);
+        }
+
         public void Update(Group group)
         {
             _group.Update(group);

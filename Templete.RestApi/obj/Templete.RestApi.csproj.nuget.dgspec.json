@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\reza\\Desktop\\template\\Templete.RestApi\\Templete.RestApi.csproj": {}
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.RestApi\\Templete.RestApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj": {
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj",
         "projectName": "Templete.Entities",
-        "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj",
-        "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\obj\\",
+        "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj",
+        "packagesPath": "C:\\Users\\taav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\reza\\Desktop\\template\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj": {
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\Desktop\\template\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj",
+        "projectUniqueName": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj",
         "projectName": "Templete.Persistanse.EF",
-        "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj",
-        "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Persistanse.EF\\obj\\",
+        "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj",
+        "packagesPath": "C:\\Users\\taav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Persistanse.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj": {
-                "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj"
+              "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj": {
+                "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj"
               }
             }
           }
@@ -140,17 +140,17 @@
         }
       }
     },
-    "C:\\Users\\reza\\Desktop\\template\\Templete.RestApi\\Templete.RestApi.csproj": {
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.RestApi\\Templete.RestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\Desktop\\template\\Templete.RestApi\\Templete.RestApi.csproj",
+        "projectUniqueName": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.RestApi\\Templete.RestApi.csproj",
         "projectName": "Templete.RestApi",
-        "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.RestApi\\Templete.RestApi.csproj",
-        "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\Desktop\\template\\Templete.RestApi\\obj\\",
+        "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.RestApi\\Templete.RestApi.csproj",
+        "packagesPath": "C:\\Users\\taav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.RestApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,8 +164,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\reza\\Desktop\\template\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj": {
-                "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj"
+              "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj": {
+                "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Persistanse.EF\\Templete.Persistanse.EF.csproj"
               }
             }
           }
@@ -225,17 +225,17 @@
         }
       }
     },
-    "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj": {
+    "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj",
+        "projectUniqueName": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj",
         "projectName": "Templete.Services",
-        "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\Templete.Services.csproj",
-        "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Services\\obj\\",
+        "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\Templete.Services.csproj",
+        "packagesPath": "C:\\Users\\taav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -249,8 +249,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj": {
-                "projectPath": "C:\\Users\\reza\\Desktop\\template\\Templete.Entities\\Templete.Entities.csproj"
+              "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj": {
+                "projectPath": "C:\\Users\\taav\\Desktop\\BusinessProject\\Templete.Entities\\Templete.Entities.csproj"
               }
             }
           }

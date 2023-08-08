@@ -66,7 +66,7 @@ namespace Templete.Services.Groups
             {
                 throw new GroupIdNotFoundException();
             }
-            var isExsistByName = _groupRepository.IsExsistByName(dto.Name);
+            var isExsistByName = _groupRepository.IsExsistByNameAndId(dto.Name,dto.GroupId);
             if (isExsistByName==true)
             {
                 throw new DuplicateGroupNameException();

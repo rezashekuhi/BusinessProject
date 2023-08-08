@@ -12,6 +12,7 @@ namespace Templete.Services.Groups.Contracts
     public interface GroupRepository
     {
         void Add(Group group);
+        bool IsExsistByNameAndId(string name,int id);
         bool IsExsistByName(string name);
         Group FindeById(int id);
         void Delete(Group group);

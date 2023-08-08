@@ -10,14 +10,14 @@ namespace Templete.Services.AccountingDocuments
 {
     public class AccountingDocumentAppService : AccountingDocumentService
     {
-        private readonly AccountingDocumentRepository _documentRepository;
-        public AccountingDocumentAppService(AccountingDocumentRepository documentRepository)
+        private readonly AccountingDocumentRepository _repository;
+        public AccountingDocumentAppService(AccountingDocumentRepository repository)
         {
-            _documentRepository = documentRepository;
+            _repository = repository;
         }
         public List<GetAllAccountingDocumentDto> GetAll(SearchInGetAllAccountingDocumentDto dto)
         {
-            return _documentRepository.GetAll(dto);
+            return _repository.GetAll(dto);
         }
     }
 }

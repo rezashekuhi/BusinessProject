@@ -4,7 +4,7 @@ using Templete.Services.SalesInvoices.Contracts.Dto;
 
 namespace Templete.RestApi.Controllers
 {
-    [Route("sales_invoices")]
+    [Route("sales-invoices")]
     [ApiController]
     public class SalesInvoiceController : Controller
     {

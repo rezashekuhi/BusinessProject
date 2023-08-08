@@ -46,3 +46,15 @@ C:\Users\reza\Desktop\template\Templete.Entities\obj\Debug\net6.0\Templete.Entit
 C:\Users\reza\Desktop\template\Templete.Entities\obj\Debug\net6.0\Templete.Entities.dll
 C:\Users\reza\Desktop\template\Templete.Entities\obj\Debug\net6.0\ref\Templete.Entities.dll
 C:\Users\reza\Desktop\template\Templete.Entities\obj\Debug\net6.0\Templete.Entities.pdb
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\bin\Debug\net6.0\Templete.Entities.deps.json
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\bin\Debug\net6.0\Templete.Entities.dll
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\bin\Debug\net6.0\ref\Templete.Entities.dll
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\bin\Debug\net6.0\Templete.Entities.pdb
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.csproj.AssemblyReference.cache
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.AssemblyInfoInputs.cache
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.AssemblyInfo.cs
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.csproj.CoreCompileInputs.cache
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.dll
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\ref\Templete.Entities.dll
+C:\Users\taav\Desktop\BusinessProject\Templete.Entities\obj\Debug\net6.0\Templete.Entities.pdb

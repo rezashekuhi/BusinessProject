@@ -4,7 +4,7 @@ using Templete.Services.AccountingDocuments.Contract.Dto;
 
 namespace Templete.RestApi.Controllers
 {
-    [Route("accounting_documents")]
+    [Route("accounting-documents")]
     [ApiController]
     public class AccountingDocumentController : Controller
     {

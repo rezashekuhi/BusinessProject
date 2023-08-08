@@ -14,8 +14,8 @@ using Xunit;
 
 namespace Tempelte.Specs.Tests.Groups
 {
-    [Scenario("حذف محصول از یک گروه")]
-    public class DeleteProductInGroup: BusinessIntegrationTest
+    [Scenario("حذف محصول")]
+    public class DeleteProduct: BusinessIntegrationTest
     {
         private Group group;
         private Product product;
@@ -34,17 +34,15 @@ namespace Tempelte.Specs.Tests.Groups
             DbContext.Save(product);
         }
 
-        [When("کالایی را با نام لنت ترمز" +
-            "از گروه لوازم یدکی حذف میکنم")]
+        [When("کالایی را با نام لنت ترمز")]
         public void When()
         {
             var sut = ProductServiceFactory.Generate(SetupContext);
             sut.Delete(product.Id);
         }
 
-        [Then("در فهرست کالا های گروه " +
-            "لوازم یدکی کالایی با نام لنت ترمز نباید " +
-            "وجود داشته باشد")]
+        [Then("در فهرست کالا ها نباید" +
+            " کالایی وجود داشته باشد ")]
         public void Then()
         {
             var expected=ReadContext.Set<Product>();
