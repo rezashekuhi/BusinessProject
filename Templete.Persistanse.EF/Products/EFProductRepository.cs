@@ -29,7 +29,7 @@ namespace Templete.Persistanse.EF.Products
             _products.Remove(product);
         }
 
-        public Product FindeById(int id)
+        public Product? FindeById(int id)
         {
             return _products.FirstOrDefault(_=>_.Id == id);
         }
@@ -47,24 +47,24 @@ namespace Templete.Persistanse.EF.Products
                     Inventory=_.Inventory,
                     MinimumInventory=_.MinimumInventory,
                     Condition=_.Condition
-                }).ToList();
+                });
 
             if (!string.IsNullOrWhiteSpace(dto.GroupName))
             {
-                result = result.Where(_ => _.GroupName.Contains(dto.GroupName)).ToList();
+                result = result.Where(_ => _.GroupName.Replace(" ",String.Empty).Contains(dto.GroupName.Replace(" ", String.Empty)));
             }
 
             if (!string.IsNullOrWhiteSpace(dto.ProductTitle))
             {
-                result = result.Where(_ => _.Title.Contains(dto.ProductTitle)).ToList();
+                result = result.Where(_ => _.Title.Contains(dto.ProductTitle));
             }
 
             if (dto.Condition>0)
             {
-                result = result.Where(_ => _.Condition == dto.Condition).ToList();
+                result = result.Where(_ => _.Condition == dto.Condition);
             }
 
-            return result;
+            return result.ToList();
         }
 
         public bool IsExsistByGroupId(int groupId)

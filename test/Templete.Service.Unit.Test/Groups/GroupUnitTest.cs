@@ -25,8 +25,8 @@ namespace CMS.Service.Unit.Test.Groups
             {
                 Name = "dummy"
             };
-
             var sut = GroupServiceFactory.Generate(SetupContext);
+
             sut.Add(dto);
 
             var expected = ReadContext.Set<Group>().Single();
@@ -41,12 +41,12 @@ namespace CMS.Service.Unit.Test.Groups
                 Name = "dummy"
             };
             DbContext.Save(group);
-
-            var sut = GroupServiceFactory.Generate(SetupContext);
+            var sut = GroupServiceFactory.Generate(SetupContext);//ToDo ctor
             var dto = new AddGroupDto
             {
                 Name = "dummy"
             };
+
             var expected = () => sut.Add(dto);
 
             expected.Should().ThrowExactly<DuplicateGroupNameException>();
@@ -56,8 +56,8 @@ namespace CMS.Service.Unit.Test.Groups
         public void Delete_throw_exception_when_group_id_not_found()
         {
             var invalidId = 1;
-
             var sut = GroupServiceFactory.Generate(SetupContext);
+
             var expected = () => sut.Delete(invalidId);
 
             expected.Should().ThrowExactly<GroupIdNotFoundException>();
@@ -68,8 +68,8 @@ namespace CMS.Service.Unit.Test.Groups
         {
             var group = AddGroupFactory.Create();
             DbContext.Save(group);
-
             var sut = GroupServiceFactory.Generate(SetupContext);
+
             sut.Delete(group.Id);
 
             ReadContext.Set<Group>().Any().Should().BeFalse();
@@ -92,8 +92,8 @@ namespace CMS.Service.Unit.Test.Groups
                 MinimumInventory = 10
             };
             DbContext.Save(product);
-
             var sut = GroupServiceFactory.Generate(SetupContext);
+
             var expected = () => sut.Delete(group.Id);
 
             expected.Should().ThrowExactly<GroupHasAProductException>();
@@ -104,8 +104,8 @@ namespace CMS.Service.Unit.Test.Groups
         {
             var group = AddGroupFactory.Create();
             DbContext.Save(group);
-
             var sut = GroupServiceFactory.Generate(SetupContext);
+
             var result = sut.GetAll();
 
             result.Single().Id.Should().Be(group.Id);
@@ -126,8 +126,8 @@ namespace CMS.Service.Unit.Test.Groups
                 MinimumInventory = 10
             };
             DbContext.Save(product);
-
             var sut = GroupServiceFactory.Generate(SetupContext);
+
             var result = sut.GetById(group.Id);
 
             result.Name.Should().Be(group.Name);

@@ -14,7 +14,7 @@ namespace Templete.Services.Products.Contracts
         bool IsExsistByGroupId(int groupId);
         bool IsExsistByTitle(string title);
         void Add(Product product);
-        Product FindeById(int id);
+        Product? FindeById(int id);
         void Delete(Product product);
         void Update(Product product);
         List<GetAllProductDto> GetAll(SearchInGetAllDto dto);

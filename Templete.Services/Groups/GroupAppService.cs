@@ -45,16 +45,16 @@ namespace Templete.Services.Groups
         public void Delete(int id)
         {
             var group = _groupRepository.FindeById(id);
+            if (group == null)
+            {
+                throw new GroupIdNotFoundException();
+            }
             var groupHasAProduct = _productRepository.IsExsistByGroupId(id);
             if (groupHasAProduct == true)
             {
                 throw new GroupHasAProductException();
             }
-
-            if (group == null)
-            {
-                throw new GroupIdNotFoundException();
-            }
+         
             _groupRepository.Delete(group);
             _unitOfWork.Complete();
         }

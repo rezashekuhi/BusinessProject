@@ -24,8 +24,7 @@ namespace CMS.Service.Unit.Test.AccountingDocuments
         {
             var group = AddGroupFactory.Create("لوازم یدکی");
             DbContext.Save(group);
-            var product = AddProductFactory.Create(group.Id, "لنت ترمز"
-            , Condition.Available, 50, 10);
+            var product = AddProductFactory.Create(group.Id, "لنت ترمز",Condition.Available, 50, 10);
             DbContext.Save(product);
             var salesInvoice = AddSalesInvoiceFactory.Create(product.Id);
             DbContext.Save(salesInvoice);
@@ -34,12 +33,12 @@ namespace CMS.Service.Unit.Test.AccountingDocuments
                 ,salesInvoice.Price*salesInvoice.Number
                 ,salesInvoice.DateTime);
             DbContext.Save(accountingDocument);
-
             var sut= AccountingDocumentServiceFactory.Generate(SetupContext);
             var dto = new SearchInGetAllAccountingDocumentDto
             {
                 InvoiceNumber = salesInvoice.InvoiceNumber
             };
+
             var result = sut.GetAll(dto);
 
             result.Single().DocumentNumber.Should().Be(accountingDocument.documentNumber);

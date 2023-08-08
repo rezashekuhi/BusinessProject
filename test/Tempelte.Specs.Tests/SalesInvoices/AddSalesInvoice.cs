@@ -41,8 +41,7 @@ namespace Tempelte.Specs.Tests.SalesInvoices
         public void When()
         {
             var sut = SalesInvoiceServiceFactory.Generate(SetupContext);
-            var dto = AddSalesInvoiceDtoFactory.Create(product.Id,1000,"مجید رضوی"
-                ,5,"123a");
+            var dto = AddSalesInvoiceDtoFactory.Create(product.Id,1000,"مجید رضوی",5,"123a");
             sut.Add(dto);
         }
 

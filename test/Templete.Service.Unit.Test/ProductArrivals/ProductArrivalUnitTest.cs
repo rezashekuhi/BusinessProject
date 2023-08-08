@@ -24,9 +24,9 @@ namespace CMS.Service.Unit.Test.ProductArrivals
             DbContext.Save(group);
             var product = AddProductFactory.Create(group.Id);
             DbContext.Save(product);
-
             var sut = ProductArrivalServiceFactory.Generate(SetupContext);
             var dto = ProductArrivalDtoFactory.Create(product.Id, 20, "123a", "dummy_compani_name");
+
             sut.Add(dto);
 
             var expected = ReadContext.Set<Product>().Single(_ => _.GroupId == group.Id);

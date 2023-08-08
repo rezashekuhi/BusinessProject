@@ -34,6 +34,7 @@ namespace Tempelte.Specs.Tests.Groups
 
         [Then("در فهرست گروه ها نباید" +
             " گروهی وجود داشته باشد")]
+        [And("")]
         public void Then()
         {
             ReadContext.Set<Group>().Any().Should().BeFalse();

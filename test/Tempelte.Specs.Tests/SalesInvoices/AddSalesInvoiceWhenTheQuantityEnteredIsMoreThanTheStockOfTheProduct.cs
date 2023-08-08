@@ -18,7 +18,8 @@ namespace Tempelte.Specs.Tests.SalesInvoices
     [Scenario("فروش کالا وقتی که تعداد " +
         "وارد شده بیشتر از موجودی " +
         "کالا باشد")]
-    public class AddSalesInvoiceWhenTheQuantityEnteredIsMoreThanTheStockOfTheProduct : BusinessIntegrationTest
+    public class AddSalesInvoiceWhenTheQuantityEnteredIsMoreThanTheStockOfTheProduct 
+        : BusinessIntegrationTest
     {
         private Group group;
         private Product product;

@@ -26,10 +26,10 @@ namespace CMS.Service.Unit.Test.SalesInvoices
             var product = AddProductFactory.Create(group.Id,"dummyt_title"
             , Condition.Available, 20, 5);
             DbContext.Save(product);
-
             var sut = SalesInvoiceServiceFactory.Generate(SetupContext);
             var dto = AddSalesInvoiceDtoFactory.Create(product.Id, 1000, "dummy_Name"
                 , 5, "123a");
+
             sut.Add(dto);
 
             var expectedProduct = ReadContext.Set<Product>().Single();
@@ -96,6 +96,7 @@ namespace CMS.Service.Unit.Test.SalesInvoices
 
             result.Single().Id.Should().Be(salesInvoice.Id);
             result.Single().ProductId.Should().Be(salesInvoice.ProductId);
+            result.Single().ProductTitle.Should().Be(salesInvoice.Product.Title);
             result.Single().CustomerName.Should().Be(salesInvoice.CustomerName);
             result.Single().Number.Should().Be(salesInvoice.Number);
             result.Single().Price.Should().Be(salesInvoice.Price);

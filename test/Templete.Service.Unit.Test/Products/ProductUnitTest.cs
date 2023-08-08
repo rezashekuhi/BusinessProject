@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Templete.Entities;
 using Templete.Services.Groups.Exceptions;
 using Templete.Services.ProductArrivals.Exceptions;
+using Templete.Services.Products.Contracts.Dto;
 using Templete.Services.Products.Exceptions;
 using Templete.TestTools.DataBaseConfig;
 using Templete.TestTools.DataBaseConfig.Unit;
@@ -73,8 +74,8 @@ namespace CMS.Service.Unit.Test.Products
             DbContext.Save(group);
             var product = AddProductFactory.Create(group.Id);
             DbContext.Save(product);
-
             var sut = ProductServiceFactory.Generate(SetupContext);
+            
             sut.Delete(product.Id);
 
             var expected = ReadContext.Set<Product>();
@@ -90,6 +91,25 @@ namespace CMS.Service.Unit.Test.Products
             var expected=()=> sut.Delete(invalidId);
 
             expected.Should().ThrowExactly<ProductIdNotFoundException>();
+        }
+
+        public void GetAll_get_all_properly()
+        {
+            var group = AddGroupFactory.Create();
+            DbContext.Save(group);
+            var product = AddProductFactory.Create(group.Id);
+            DbContext.Save(product);
+            var sut = ProductServiceFactory.Generate(SetupContext);
+
+            var dto = new SearchInGetAllDto{};
+            var result= sut.GetAll(dto);
+
+            var expected = result.Single();
+            expected.Title.Should().Be(product.Title);
+            expected.Inventory.Should().Be(product.Inventory);
+            expected.GroupName.Should().Be(group.Name);
+            expected.Condition.Should().Be(product.Condition);
+            expected.MinimumInventory.Should().Be(product.MinimumInventory);
         }
     }
 }
